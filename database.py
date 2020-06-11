@@ -39,10 +39,7 @@ def commit_generation_logs(cursor, db, logfile):
         'Energy Generated in kWh':'energy_kWh'
     }
     df = df.rename(columns = cols)
-    # DATE type in mysql uses yyyy-mm-dd format to record dates
-    #print(df)
-    # df['date_recorded'] = df['date_recorded'].apply(lambda dt: dt.split('/')[2] + '-' + dt.split('/')[1] + '-' + dt.split('/')[0])
-    # print(df)
+
     query = """INSERT IGNORE INTO generation_logs (date_recorded, `energy_kWh`) VALUES (%s, %s)"""
     for _,row in df.iterrows():
         cursor.execute(query, tuple(row))
