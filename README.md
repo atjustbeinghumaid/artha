@@ -4,10 +4,10 @@ A basic web scraper that scraps error logs and energy generated logs for the mon
 
 ## Steps to Run 
 1. Clone the repository locally
-2. Install the dependencies 
-⋅⋅*i.`pip3 install -r requirements.txt` 
-3. Execute the script 
-⋅⋅*i.`python3 driver.py`
+2. Install the dependencies  
+`pip3 install -r requirements.txt` 
+3. Execute the script  
+`python3 driver.py`
 
 ### Make sure to have mysql installed and have a user with the following credentials:
 `username: newuser`
