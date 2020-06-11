@@ -10,7 +10,7 @@ A basic web scraper that scraps error logs and energy generated logs for the mon
 `python3 driver.py`
 
 #### Make sure to have mysql installed and have a user with the following credentials:
-`username: newuser`
+`username: newuser`  
 `password: arthadb`
 
 *Script can be trivially modified to scrape for any time period and not only January and February 2020*
